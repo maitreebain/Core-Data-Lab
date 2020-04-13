@@ -38,7 +38,15 @@ class DisplayViewController: UIViewController {
     }
     
     private func loadData(for search: String) {
-        
+        ImageAPIClient.fetchImages(for: searchQuery) { (result) in
+            
+            switch result{
+            case .failure(let appError):
+                print("no results: \(appError)")
+            case .success(let images):
+                self.images = images
+            }
+        }
     }
     
 
@@ -84,8 +92,13 @@ extension DisplayViewController: UICollectionViewDataSource, UICollectionViewDel
 }
 
 extension DisplayViewController: UISearchBarDelegate {
-
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        <#code#>
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        guard let searchText = searchBar.text else { return }
+        searchBar.resignFirstResponder()
+        loadData(for: searchText)
+        searchQuery = searchText
     }
+
 }

@@ -23,7 +23,9 @@ class DisplayCell: UICollectionViewCell {
                     self?.imageView.image = UIImage(systemName: "xmark.circle")
                 }
             case .success(let image):
-                self?.imageView.image = image
+                DispatchQueue.main.async {
+                    self?.imageView.image = image
+                }
             }
         }
     }

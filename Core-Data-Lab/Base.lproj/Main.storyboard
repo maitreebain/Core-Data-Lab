@@ -81,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2cY-zl-8Ki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="945" y="15"/>
+            <point key="canvasLocation" x="1001" y="171"/>
         </scene>
         <!--Display View Controller-->
         <scene sceneID="AW2-VD-5Fr">
@@ -96,7 +96,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ub1-vP-ehH">
-                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="620"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fve-Ya-OYH">
                                     <size key="itemSize" width="189" height="191"/>
@@ -144,7 +144,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5vJ-hz-deC"/>
                     </view>
-                    <navigationItem key="navigationItem" id="snB-Ug-72L"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="snB-Ug-72L">
+                        <barButtonItem key="rightBarButtonItem" image="person.crop.circle.fill" catalog="system" id="17h-kr-tpE">
+                            <color key="tintColor" red="0.39436031770000002" green="0.80454147949999999" blue="0.84708121830000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="Juu-4w-6Ij" kind="presentation" id="hgI-3k-lUZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="searchBar" destination="jHJ-mx-8k2" id="NJc-N4-zbp"/>
                         <outlet property="searchCollectionView" destination="Ub1-vP-ehH" id="MOt-Kf-Vmy"/>
@@ -152,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AeP-ib-HRh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="989.85507246376824" y="-656.25"/>
+            <point key="canvasLocation" x="964" y="-564"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="RdN-XN-NbE">
@@ -251,15 +260,85 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="UxO-gZ-a3X" kind="relationship" relationship="rootViewController" id="rlr-C4-BKI"/>
+                        <segue destination="UxO-gZ-a3X" kind="relationship" relationship="rootViewController" id="nkD-mx-gvw"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tvp-Np-7EI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="79.710144927536234" y="-656.25"/>
         </scene>
+        <!--Welcome!-->
+        <scene sceneID="ccX-H1-c6R">
+            <objects>
+                <viewController id="Juu-4w-6Ij" customClass="UserViewController" customModule="Core_Data_Lab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ceB-bK-CDh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sCE-AY-v2X">
+                                <rect key="frame" x="60" y="95" width="294" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBr-df-xSu">
+                                <rect key="frame" x="20" y="40" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0D1-n7-N5N">
+                                <rect key="frame" x="20" y="230" width="374" height="216"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your birthday!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Amr-5p-C5W">
+                                <rect key="frame" x="122" y="189" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghK-QI-64G">
+                                <rect key="frame" x="178" y="486" width="58" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ll4-yz-Enc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButtonPressed:" destination="Juu-4w-6Ij" eventType="touchUpInside" id="w5R-dN-QsV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sCE-AY-v2X" firstAttribute="top" secondItem="jBr-df-xSu" secondAttribute="bottom" constant="34" id="IdS-cE-UqL"/>
+                            <constraint firstItem="ghK-QI-64G" firstAttribute="centerX" secondItem="ceB-bK-CDh" secondAttribute="centerX" id="LLP-Rs-fMc"/>
+                            <constraint firstItem="dqj-9j-f9I" firstAttribute="trailing" secondItem="jBr-df-xSu" secondAttribute="trailing" constant="20" id="MDb-3z-pzI"/>
+                            <constraint firstItem="ghK-QI-64G" firstAttribute="top" secondItem="0D1-n7-N5N" secondAttribute="bottom" constant="40" id="XtJ-Mt-ubn"/>
+                            <constraint firstItem="dqj-9j-f9I" firstAttribute="trailing" secondItem="sCE-AY-v2X" secondAttribute="trailing" constant="60" id="Xyx-7d-Oek"/>
+                            <constraint firstItem="0D1-n7-N5N" firstAttribute="top" secondItem="Amr-5p-C5W" secondAttribute="bottom" constant="20" id="aeH-wq-pW2"/>
+                            <constraint firstItem="sCE-AY-v2X" firstAttribute="centerX" secondItem="ceB-bK-CDh" secondAttribute="centerX" id="bUA-ch-jKw"/>
+                            <constraint firstItem="0D1-n7-N5N" firstAttribute="leading" secondItem="ceB-bK-CDh" secondAttribute="leading" constant="20" id="dcV-mY-Erg"/>
+                            <constraint firstItem="jBr-df-xSu" firstAttribute="top" secondItem="dqj-9j-f9I" secondAttribute="top" constant="40" id="eHQ-BT-2Pe"/>
+                            <constraint firstItem="dqj-9j-f9I" firstAttribute="trailing" secondItem="0D1-n7-N5N" secondAttribute="trailing" constant="20" id="ebM-59-WnL"/>
+                            <constraint firstItem="sCE-AY-v2X" firstAttribute="leading" secondItem="dqj-9j-f9I" secondAttribute="leading" constant="60" id="iOT-cH-9uD"/>
+                            <constraint firstItem="jBr-df-xSu" firstAttribute="leading" secondItem="dqj-9j-f9I" secondAttribute="leading" constant="20" id="mqv-KR-XbV"/>
+                            <constraint firstItem="Amr-5p-C5W" firstAttribute="top" secondItem="sCE-AY-v2X" secondAttribute="bottom" constant="60" id="tI6-Sf-dUo"/>
+                            <constraint firstItem="Amr-5p-C5W" firstAttribute="centerX" secondItem="ceB-bK-CDh" secondAttribute="centerX" id="vbe-Bz-znf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dqj-9j-f9I"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome!" id="nUh-fD-YIH"/>
+                    <connections>
+                        <outlet property="dobPicker" destination="0D1-n7-N5N" id="804-zg-AXf"/>
+                        <outlet property="nameTextField" destination="sCE-AY-v2X" id="FfP-iS-jCj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kCC-Ui-EXV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="-1330"/>
+        </scene>
     </scenes>
     <resources>
         <image name="heart.fill" catalog="system" width="64" height="54"/>
+        <image name="person.crop.circle.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>

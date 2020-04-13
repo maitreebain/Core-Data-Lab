@@ -78,7 +78,8 @@ extension FavoritesViewController: UICollectionViewDataSource {
 
 extension FavoritesViewController: DisplayDelegate {
     func createdFav(_ viewController: DisplayViewController, _ favItem: Favorites) {
-        <#code#>
+        
+        favorites.append(favItem)
     }
     
     

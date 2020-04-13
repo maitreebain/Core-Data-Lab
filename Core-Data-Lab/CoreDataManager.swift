@@ -26,6 +26,7 @@ class CoreDataManager {
         user.dob = dob
         
         do {
+            print("user created")
             try context.save()
         } catch {
             print("error saving user: \(error)")
@@ -39,7 +40,13 @@ class CoreDataManager {
         favorite.imageURL = imageURL
         favorite.tags = tags
         
-        print("favorite created")
+        do {
+            try context.save()
+            print("saved fav")
+        } catch {
+            print("error favoriting: \(error)")
+        }
+        
         return favorite
     }
     

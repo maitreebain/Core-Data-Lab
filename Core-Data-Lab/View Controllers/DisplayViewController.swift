@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol DisplayDelegate: AnyObject {
+    func createdFav(_ viewController: DisplayViewController, _ favItem: Favorites)
+}
+
 class DisplayViewController: UIViewController {
 
     @IBOutlet weak var searchCollectionView: UICollectionView!
@@ -25,6 +29,8 @@ class DisplayViewController: UIViewController {
     private var users = [User]()
     
     private var selectedUser: User?
+    
+    weak var delegate: DisplayDelegate?
     
     private var searchQuery = "" {
         didSet{
@@ -115,8 +121,9 @@ extension DisplayViewController: DisplayCellDelegate {
         guard let user = selectedUser,
             let tags = image.tags else { return }
         
-        CoreDataManager.shared.createFavorite(for: user, imageURL: image.largeImageURL, tags: tags)
+        let favItem = CoreDataManager.shared.createFavorite(for: user, imageURL: image.largeImageURL, tags: tags)
         
+        delegate?.createdFav(self, favItem)
     }
     
     

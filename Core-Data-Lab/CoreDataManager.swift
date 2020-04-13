@@ -28,10 +28,29 @@ class CoreDataManager {
         do {
             try context.save()
         } catch {
-            print("error saving user: \(error)") //NSManagedObject
+            print("error saving user: \(error)")
         }
         
         return user
+    }
+    
+    public func createFavorite(for user: User, imageURL: String, tags: String) -> Favorites {
+        let favorite = Favorites(entity: Favorites.entity(), insertInto: context)
+        favorite.imageURL = imageURL
+        favorite.tags = tags
+        
+        print("favorite created")
+        return favorite
+    }
+    
+    public func fetchFavorites() -> [Favorites]{
+        do {
+            favorites = try context.fetch(Favorites.fetchRequest())
+            
+        } catch {
+            print("error fetching favs: \(error)")
+        }
+        return favorites
     }
     
     

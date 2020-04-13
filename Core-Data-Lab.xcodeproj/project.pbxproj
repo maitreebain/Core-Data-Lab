@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		804D191A2445167000F1FF9E /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D19192445167000F1FF9E /* UserViewController.swift */; };
 		804D191C2445191000F1FF9E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D191B2445191000F1FF9E /* CoreDataManager.swift */; };
-		804D192924451B7500F1FF9E /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D192524451B7500F1FF9E /* Favorites+CoreDataClass.swift */; };
-		804D192A24451B7500F1FF9E /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D192624451B7500F1FF9E /* Favorites+CoreDataProperties.swift */; };
-		804D192B24451B7500F1FF9E /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D192724451B7500F1FF9E /* User+CoreDataClass.swift */; };
-		804D192C24451B7500F1FF9E /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D192824451B7500F1FF9E /* User+CoreDataProperties.swift */; };
+		804D1931244527B700F1FF9E /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D192D244527B700F1FF9E /* Favorites+CoreDataClass.swift */; };
+		804D1932244527B700F1FF9E /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D192E244527B700F1FF9E /* Favorites+CoreDataProperties.swift */; };
+		804D1933244527B700F1FF9E /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D192F244527B700F1FF9E /* User+CoreDataClass.swift */; };
+		804D1934244527B700F1FF9E /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D1930244527B700F1FF9E /* User+CoreDataProperties.swift */; };
 		80A1E15F2443FC3B00C7F384 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E15E2443FC3B00C7F384 /* AppDelegate.swift */; };
 		80A1E1612443FC3B00C7F384 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E1602443FC3B00C7F384 /* SceneDelegate.swift */; };
 		80A1E1632443FC3B00C7F384 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E1622443FC3B00C7F384 /* DisplayViewController.swift */; };
@@ -33,10 +33,10 @@
 /* Begin PBXFileReference section */
 		804D19192445167000F1FF9E /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		804D191B2445191000F1FF9E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		804D192524451B7500F1FF9E /* Favorites+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		804D192624451B7500F1FF9E /* Favorites+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		804D192724451B7500F1FF9E /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		804D192824451B7500F1FF9E /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		804D192D244527B700F1FF9E /* Favorites+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		804D192E244527B700F1FF9E /* Favorites+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		804D192F244527B700F1FF9E /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		804D1930244527B700F1FF9E /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		80A1E15B2443FC3B00C7F384 /* Core-Data-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core-Data-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A1E15E2443FC3B00C7F384 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80A1E1602443FC3B00C7F384 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,10 +70,10 @@
 		804D1910244513EC00F1FF9E /* Data Files */ = {
 			isa = PBXGroup;
 			children = (
-				804D192524451B7500F1FF9E /* Favorites+CoreDataClass.swift */,
-				804D192624451B7500F1FF9E /* Favorites+CoreDataProperties.swift */,
-				804D192724451B7500F1FF9E /* User+CoreDataClass.swift */,
-				804D192824451B7500F1FF9E /* User+CoreDataProperties.swift */,
+				804D192D244527B700F1FF9E /* Favorites+CoreDataClass.swift */,
+				804D192E244527B700F1FF9E /* Favorites+CoreDataProperties.swift */,
+				804D192F244527B700F1FF9E /* User+CoreDataClass.swift */,
+				804D1930244527B700F1FF9E /* User+CoreDataProperties.swift */,
 			);
 			path = "Data Files";
 			sourceTree = "<group>";
@@ -213,19 +213,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				80A1E18A244402B700C7F384 /* DisplayCell.swift in Sources */,
-				804D192A24451B7500F1FF9E /* Favorites+CoreDataProperties.swift in Sources */,
+				804D1932244527B700F1FF9E /* Favorites+CoreDataProperties.swift in Sources */,
 				804D191A2445167000F1FF9E /* UserViewController.swift in Sources */,
 				80A1E1802444015700C7F384 /* PixModel.swift in Sources */,
-				804D192924451B7500F1FF9E /* Favorites+CoreDataClass.swift in Sources */,
+				804D1931244527B700F1FF9E /* Favorites+CoreDataClass.swift in Sources */,
 				804D191C2445191000F1FF9E /* CoreDataManager.swift in Sources */,
-				804D192B24451B7500F1FF9E /* User+CoreDataClass.swift in Sources */,
+				804D1933244527B700F1FF9E /* User+CoreDataClass.swift in Sources */,
 				80A1E1632443FC3B00C7F384 /* DisplayViewController.swift in Sources */,
 				80A1E1762443FC7D00C7F384 /* Secrets.swift in Sources */,
 				80A1E17A2443FE2C00C7F384 /* FavoritesViewController.swift in Sources */,
 				80A1E15F2443FC3B00C7F384 /* AppDelegate.swift in Sources */,
 				80A1E1782443FE2300C7F384 /* DetailViewController.swift in Sources */,
 				80A1E1692443FC3B00C7F384 /* Core_Data_Lab.xcdatamodeld in Sources */,
-				804D192C24451B7500F1FF9E /* User+CoreDataProperties.swift in Sources */,
+				804D1934244527B700F1FF9E /* User+CoreDataProperties.swift in Sources */,
 				80A1E1612443FC3B00C7F384 /* SceneDelegate.swift in Sources */,
 				80A1E17E2444011100C7F384 /* PixAPIClient.swift in Sources */,
 				80A1E18C244402DB00C7F384 /* FavoritesCell.swift in Sources */,

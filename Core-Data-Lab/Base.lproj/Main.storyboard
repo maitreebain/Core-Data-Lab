@@ -11,7 +11,7 @@
         <!--Item 2-->
         <scene sceneID="wo1-H8-lKi">
             <objects>
-                <viewController id="6DJ-Uf-beG" sceneMemberID="viewController">
+                <viewController id="6DJ-Uf-beG" customClass="FavoritesViewController" customModule="Core_Data_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fdn-AJ-M2q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,20 +19,23 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lT2-eM-mc3">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LPc-R3-HRW">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LPc-R3-HRW">
                                     <size key="itemSize" width="222" height="204"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YOl-ZB-yaE">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="favoriteCell" id="YOl-ZB-yaE" customClass="FavoritesCell" customModule="Core_Data_Lab" customModuleProvider="target">
                                         <rect key="frame" x="96" y="0.0" width="222" height="204"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WeG-Sk-qhK">
                                             <rect key="frame" x="0.0" y="0.0" width="222" height="204"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sqp-RE-nAU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="222" height="204"/>
+                                                </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndg-nd-One">
                                                     <rect key="frame" x="170" y="153.5" width="44" height="41.5"/>
                                                     <constraints>
@@ -44,11 +47,19 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Sqp-RE-nAU" secondAttribute="trailing" constant="0.01" id="C3D-fv-e3n"/>
                                                 <constraint firstAttribute="trailing" secondItem="ndg-nd-One" secondAttribute="trailing" constant="8" id="Mze-bz-uma"/>
+                                                <constraint firstItem="Sqp-RE-nAU" firstAttribute="top" secondItem="WeG-Sk-qhK" secondAttribute="top" constant="0.01" id="O5s-eK-6KP"/>
+                                                <constraint firstAttribute="bottom" secondItem="Sqp-RE-nAU" secondAttribute="bottom" constant="0.01" id="Uaw-2W-4Dk"/>
                                                 <constraint firstAttribute="bottom" secondItem="ndg-nd-One" secondAttribute="bottom" constant="8" id="eJH-OB-Ovl"/>
+                                                <constraint firstItem="Sqp-RE-nAU" firstAttribute="leading" secondItem="WeG-Sk-qhK" secondAttribute="leading" constant="0.01" id="gcR-3e-xdb"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="222" height="204"/>
+                                        <connections>
+                                            <outlet property="favImage" destination="Sqp-RE-nAU" id="809-9n-O9W"/>
+                                            <outlet property="heartButton" destination="ndg-nd-One" id="s5R-7N-vJx"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -63,25 +74,13 @@
                         <viewLayoutGuide key="safeArea" id="88f-5n-Q9f"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="kBK-ea-qJg"/>
+                    <connections>
+                        <outlet property="favoritesCollection" destination="lT2-eM-mc3" id="9Sn-aQ-kI8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1R-Xn-Aru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="79.710144927536234" y="-7.3660714285714279"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="jWd-aj-zMB">
-            <objects>
-                <viewController id="Kiz-sr-HL0" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="54V-tC-8qF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="LwS-8M-5vI"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2cY-zl-8Ki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1001" y="171"/>
         </scene>
         <!--Display View Controller-->
         <scene sceneID="AW2-VD-5Fr">
@@ -98,7 +97,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ub1-vP-ehH">
                                 <rect key="frame" x="0.0" y="144" width="414" height="620"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fve-Ya-OYH">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fve-Ya-OYH">
                                     <size key="itemSize" width="189" height="191"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -112,15 +111,29 @@
                                             <rect key="frame" x="0.0" y="0.0" width="189" height="191"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OHb-hR-eGa">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OHb-hR-eGa">
                                                     <rect key="frame" x="0.0" y="0.0" width="189" height="191"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VK1-0i-sJk">
+                                                    <rect key="frame" x="137" y="140.5" width="44" height="41.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="44" id="9LZ-F2-tou"/>
+                                                        <constraint firstAttribute="height" constant="44" id="X6P-ES-Wwd"/>
+                                                    </constraints>
+                                                    <color key="tintColor" red="0.89308375630000003" green="0.38342688920000001" blue="0.36983842729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <state key="normal" image="suit.heart" catalog="system" backgroundImage="suit.heart"/>
+                                                    <connections>
+                                                        <action selector="favoriteButtonPressed:" destination="UyE-8f-I8b" eventType="touchUpInside" id="Ybn-um-hxe"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="OHb-hR-eGa" secondAttribute="bottom" constant="0.01" id="8hz-Ow-pTV"/>
                                                 <constraint firstItem="OHb-hR-eGa" firstAttribute="top" secondItem="Hf2-wN-0Lb" secondAttribute="top" constant="0.01" id="AoI-iS-4vI"/>
                                                 <constraint firstAttribute="trailing" secondItem="OHb-hR-eGa" secondAttribute="trailing" constant="0.01" id="RaU-Dc-5Aq"/>
+                                                <constraint firstAttribute="bottom" secondItem="VK1-0i-sJk" secondAttribute="bottom" constant="8" id="Vyb-Fi-yFZ"/>
                                                 <constraint firstItem="OHb-hR-eGa" firstAttribute="leading" secondItem="Hf2-wN-0Lb" secondAttribute="leading" constant="0.01" id="X6b-Jm-95E"/>
+                                                <constraint firstAttribute="trailing" secondItem="VK1-0i-sJk" secondAttribute="trailing" constant="8" id="jMd-NH-Bvh"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="189" height="191"/>
@@ -340,5 +353,6 @@
     <resources>
         <image name="heart.fill" catalog="system" width="64" height="54"/>
         <image name="person.crop.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="suit.heart" catalog="system" width="64" height="54"/>
     </resources>
 </document>

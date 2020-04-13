@@ -18,7 +18,6 @@ extension Favorites {
     }
 
     @NSManaged public var imageURL: String?
-    @NSManaged public var likes: Int64
     @NSManaged public var tags: String?
     @NSManaged public var user: User?
 

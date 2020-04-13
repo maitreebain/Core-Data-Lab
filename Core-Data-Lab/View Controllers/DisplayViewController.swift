@@ -22,6 +22,10 @@ class DisplayViewController: UIViewController {
         }
     }
     
+    private var users = [User]()
+    
+    private var selectedUser: User?
+    
     private var searchQuery = "" {
         didSet{
             loadData(for: searchQuery)
@@ -34,6 +38,7 @@ class DisplayViewController: UIViewController {
         searchCollectionView.dataSource = self
         searchCollectionView.delegate = self
         searchBar.delegate = self
+        selectedUser = users.first
         
     }
     
@@ -85,6 +90,7 @@ extension DisplayViewController: UICollectionViewDataSource, UICollectionViewDel
         let image = images[indexPath.row]
         
         cell.configureCell(for: image)
+        cell.delegate = self
         
         return cell
     }
@@ -101,4 +107,17 @@ extension DisplayViewController: UISearchBarDelegate {
         searchQuery = searchText
     }
 
+}
+
+extension DisplayViewController: DisplayCellDelegate {
+    func didPressFavoriteButton(_ cell: DisplayCell, _ image: Image) {
+        
+        guard let user = selectedUser,
+            let tags = image.tags else { return }
+        
+        CoreDataManager.shared.createFavorite(for: user, imageURL: image.largeImageURL, tags: tags)
+        
+    }
+    
+    
 }

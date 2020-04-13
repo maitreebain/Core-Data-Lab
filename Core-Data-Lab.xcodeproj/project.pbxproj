@@ -3,29 +3,52 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		80A1E15F2443FC3B00C7F384 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E15E2443FC3B00C7F384 /* AppDelegate.swift */; };
 		80A1E1612443FC3B00C7F384 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E1602443FC3B00C7F384 /* SceneDelegate.swift */; };
-		80A1E1632443FC3B00C7F384 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E1622443FC3B00C7F384 /* ViewController.swift */; };
+		80A1E1632443FC3B00C7F384 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E1622443FC3B00C7F384 /* DisplayViewController.swift */; };
 		80A1E1662443FC3B00C7F384 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A1E1642443FC3B00C7F384 /* Main.storyboard */; };
 		80A1E1692443FC3B00C7F384 /* Core_Data_Lab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E1672443FC3B00C7F384 /* Core_Data_Lab.xcdatamodeld */; };
 		80A1E16B2443FC3C00C7F384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A1E16A2443FC3C00C7F384 /* Assets.xcassets */; };
 		80A1E16E2443FC3C00C7F384 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A1E16C2443FC3C00C7F384 /* LaunchScreen.storyboard */; };
+		80A1E1762443FC7D00C7F384 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E1752443FC7D00C7F384 /* Secrets.swift */; };
+		80A1E1782443FE2300C7F384 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E1772443FE2300C7F384 /* DetailViewController.swift */; };
+		80A1E17A2443FE2C00C7F384 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E1792443FE2C00C7F384 /* FavoritesViewController.swift */; };
+		80A1E17E2444011100C7F384 /* PixAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E17D2444011100C7F384 /* PixAPIClient.swift */; };
+		80A1E1802444015700C7F384 /* PixModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E17F2444015700C7F384 /* PixModel.swift */; };
+		80A1E18A244402B700C7F384 /* DisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E189244402B700C7F384 /* DisplayCell.swift */; };
+		80A1E18C244402DB00C7F384 /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E18B244402DB00C7F384 /* FavoritesCell.swift */; };
+		80A1E18F2444053100C7F384 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 80A1E18E2444053100C7F384 /* ImageKit */; };
+		80A1E1AD24440C0300C7F384 /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E1A924440C0300C7F384 /* Favorites+CoreDataClass.swift */; };
+		80A1E1AE24440C0300C7F384 /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E1AA24440C0300C7F384 /* Favorites+CoreDataProperties.swift */; };
+		80A1E1AF24440C0300C7F384 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E1AB24440C0300C7F384 /* User+CoreDataClass.swift */; };
+		80A1E1B024440C0300C7F384 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1E1AC24440C0300C7F384 /* User+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		80A1E15B2443FC3B00C7F384 /* Core-Data-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core-Data-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A1E15E2443FC3B00C7F384 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80A1E1602443FC3B00C7F384 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		80A1E1622443FC3B00C7F384 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80A1E1622443FC3B00C7F384 /* DisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
 		80A1E1652443FC3B00C7F384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80A1E1682443FC3B00C7F384 /* Core_Data_Lab.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Core_Data_Lab.xcdatamodel; sourceTree = "<group>"; };
 		80A1E16A2443FC3C00C7F384 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80A1E16D2443FC3C00C7F384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80A1E16F2443FC3C00C7F384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A1E1752443FC7D00C7F384 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		80A1E1772443FE2300C7F384 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		80A1E1792443FE2C00C7F384 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		80A1E17D2444011100C7F384 /* PixAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixAPIClient.swift; sourceTree = "<group>"; };
+		80A1E17F2444015700C7F384 /* PixModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixModel.swift; sourceTree = "<group>"; };
+		80A1E189244402B700C7F384 /* DisplayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayCell.swift; sourceTree = "<group>"; };
+		80A1E18B244402DB00C7F384 /* FavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
+		80A1E1A924440C0300C7F384 /* Favorites+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataClass.swift"; sourceTree = "<group>"; };
+		80A1E1AA24440C0300C7F384 /* Favorites+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		80A1E1AB24440C0300C7F384 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		80A1E1AC24440C0300C7F384 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80A1E18F2444053100C7F384 /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +82,43 @@
 		80A1E15D2443FC3B00C7F384 /* Core-Data-Lab */ = {
 			isa = PBXGroup;
 			children = (
+				80A1E1A924440C0300C7F384 /* Favorites+CoreDataClass.swift */,
+				80A1E1AA24440C0300C7F384 /* Favorites+CoreDataProperties.swift */,
+				80A1E1AB24440C0300C7F384 /* User+CoreDataClass.swift */,
+				80A1E1AC24440C0300C7F384 /* User+CoreDataProperties.swift */,
+				80A1E1842444028100C7F384 /* Cells */,
 				80A1E15E2443FC3B00C7F384 /* AppDelegate.swift */,
 				80A1E1602443FC3B00C7F384 /* SceneDelegate.swift */,
-				80A1E1622443FC3B00C7F384 /* ViewController.swift */,
+				80A1E17F2444015700C7F384 /* PixModel.swift */,
+				80A1E17D2444011100C7F384 /* PixAPIClient.swift */,
+				80A1E17B244400C500C7F384 /* View Controllers */,
 				80A1E1642443FC3B00C7F384 /* Main.storyboard */,
 				80A1E16A2443FC3C00C7F384 /* Assets.xcassets */,
 				80A1E16C2443FC3C00C7F384 /* LaunchScreen.storyboard */,
 				80A1E16F2443FC3C00C7F384 /* Info.plist */,
 				80A1E1672443FC3B00C7F384 /* Core_Data_Lab.xcdatamodeld */,
+				80A1E1752443FC7D00C7F384 /* Secrets.swift */,
 			);
 			path = "Core-Data-Lab";
+			sourceTree = "<group>";
+		};
+		80A1E17B244400C500C7F384 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				80A1E1622443FC3B00C7F384 /* DisplayViewController.swift */,
+				80A1E1772443FE2300C7F384 /* DetailViewController.swift */,
+				80A1E1792443FE2C00C7F384 /* FavoritesViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		80A1E1842444028100C7F384 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				80A1E189244402B700C7F384 /* DisplayCell.swift */,
+				80A1E18B244402DB00C7F384 /* FavoritesCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +137,9 @@
 			dependencies = (
 			);
 			name = "Core-Data-Lab";
+			packageProductDependencies = (
+				80A1E18E2444053100C7F384 /* ImageKit */,
+			);
 			productName = "Core-Data-Lab";
 			productReference = 80A1E15B2443FC3B00C7F384 /* Core-Data-Lab.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +168,9 @@
 				Base,
 			);
 			mainGroup = 80A1E1522443FC3B00C7F384;
+			packageReferences = (
+				80A1E18D2444053100C7F384 /* XCRemoteSwiftPackageReference "ImageKit" */,
+			);
 			productRefGroup = 80A1E15C2443FC3B00C7F384 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,10 +198,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80A1E1632443FC3B00C7F384 /* ViewController.swift in Sources */,
+				80A1E18A244402B700C7F384 /* DisplayCell.swift in Sources */,
+				80A1E1802444015700C7F384 /* PixModel.swift in Sources */,
+				80A1E1AE24440C0300C7F384 /* Favorites+CoreDataProperties.swift in Sources */,
+				80A1E1632443FC3B00C7F384 /* DisplayViewController.swift in Sources */,
+				80A1E1762443FC7D00C7F384 /* Secrets.swift in Sources */,
+				80A1E17A2443FE2C00C7F384 /* FavoritesViewController.swift in Sources */,
+				80A1E1AF24440C0300C7F384 /* User+CoreDataClass.swift in Sources */,
 				80A1E15F2443FC3B00C7F384 /* AppDelegate.swift in Sources */,
+				80A1E1B024440C0300C7F384 /* User+CoreDataProperties.swift in Sources */,
+				80A1E1782443FE2300C7F384 /* DetailViewController.swift in Sources */,
 				80A1E1692443FC3B00C7F384 /* Core_Data_Lab.xcdatamodeld in Sources */,
 				80A1E1612443FC3B00C7F384 /* SceneDelegate.swift in Sources */,
+				80A1E17E2444011100C7F384 /* PixAPIClient.swift in Sources */,
+				80A1E18C244402DB00C7F384 /* FavoritesCell.swift in Sources */,
+				80A1E1AD24440C0300C7F384 /* Favorites+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +410,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		80A1E18D2444053100C7F384 /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		80A1E18E2444053100C7F384 /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80A1E18D2444053100C7F384 /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		80A1E1672443FC3B00C7F384 /* Core_Data_Lab.xcdatamodeld */ = {
